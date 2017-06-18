@@ -29,16 +29,17 @@ from setuptools.dist import Distribution
 # This version string is semver compatible, but incompatible with pip.
 # For pip, we will remove all '-' characters from this string, and use the
 # result for pip.
-_VERSION = '1.2.0-rc1'
+_VERSION = '1.2.0'
 
 REQUIRED_PACKAGES = [
     'numpy >= 1.11.0',
     'six >= 1.10.0',
-    'protobuf >= 3.2.0',
+    'protobuf >= 3.3.0',
     'werkzeug >= 0.11.10',
     'html5lib == 0.9999999',  # identical to 1.0b8
     'markdown == 2.2.0',
     'bleach == 1.5.0',
+    'backports.weakref == 1.0rc1',
 ]
 
 project_name = 'tensorflow'
